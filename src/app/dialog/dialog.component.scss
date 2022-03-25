@@ -1,0 +1,21 @@
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialog {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-box-shadow: 5px 5px 82px 0px #000000;
+    -moz-box-shadow: 5px 5px 82px 0px #000000;
+    -o-box-shadow: 5px 5px 82px 0px #000000;
+    box-shadow: 5px 5px 82px 0px #000000;
+}

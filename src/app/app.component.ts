@@ -10,6 +10,9 @@ import { TaskDialogComponent } from './task-dialog/task-dialog.component';
 })
 
 export class AppComponent {
+
+  title = 'taskDialog';
+  dialogVisibility='visible';
  
   constructor(public dialog: MatDialog) {}
 
@@ -26,7 +29,17 @@ export class AppComponent {
     });
   }
 
+  openBility() {
+    if (this.dialogVisibility === "visible") {
+      this.dialogVisibility = "invisible"
+    } else {
+      this.dialogVisibility = "visible"
+    }
+  }
 
+  displayDialogResult(result: string) {
+    console.log(result);
+  }
 
   
 }

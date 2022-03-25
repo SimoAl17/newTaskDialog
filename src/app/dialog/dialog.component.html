@@ -1,0 +1,7 @@
+<div [@visibleInvisible]="visibilityState" class="container" (click)="closeDialog()">
+    <div class="dialog" (click)="$event.stopPropagation()">
+        <h1>Hello world!</h1>
+        <button (click)="closeDialog()">Cancel</button>
+        <button (click)="closeDialog('Ecco il risultato')">OK</button>
+    </div>
+</div>
